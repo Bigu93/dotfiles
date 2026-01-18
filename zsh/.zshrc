@@ -101,7 +101,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH=$PATH:/usr/local/go/bin:/home/kali/.local/bin
+export PATH=$PATH:/usr/local/go/bin:$HOME/.local/bin
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
