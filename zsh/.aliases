@@ -31,3 +31,6 @@ alias fixshell='python3 -c "import pty; pty.spawn(\"/bin/bash\")"; export TERM=x
 alias mv='mv -i'
 alias cp='cp -i'
 alias rm='rm -i'
+
+# --- Other ---
+alias shortcuts='echo -e "\n\033[1;32mTMUX SHORTCUTS:\033[0m\n  Prefix: Ctrl+b\n  Split:  Prefix + | OR -\n  Move:   Alt + Arrows\n  Zoom:   Prefix + z\n  Copy:   Prefix + [ -> Space -> Enter\n  Paste:  Prefix + p\n"'
