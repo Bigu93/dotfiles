@@ -96,6 +96,7 @@ plugins=(
 	zsh-history-substring-search
 	copyfile
 	autoswitch_virtualenv
+	zsh-pentest
 )
 
 source $ZSH/oh-my-zsh.sh

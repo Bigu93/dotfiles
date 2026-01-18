@@ -45,6 +45,7 @@ install_plugin "https://github.com/zsh-users/zsh-autosuggestions.git" "zsh-autos
 install_plugin "https://github.com/zsh-users/zsh-syntax-highlighting.git" "zsh-syntax-highlighting"
 install_plugin "https://github.com/zsh-users/zsh-history-substring-search" "zsh-history-substring-search"
 install_plugin "https://github.com/MichaelAquilina/zsh-autoswitch-virtualenv.git" "autoswitch_virtualenv"
+install_plugin "https://github.com/jhwohlgemuth/zsh-pentest.git" "zsh-pentest"
 
 echo "--- Linking Dotfiles via Stow ---"
 if [ -d "$DOTFILES_DIR" ]; then
